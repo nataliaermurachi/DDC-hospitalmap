@@ -16,9 +16,9 @@
 <body>
     <div class="container-fluid">
         <div class="row">
-            <h2 id="depTitle" class="col-7">
+            <h2 id="depTitle" class="col-12">
             </h2>
-            <h3 class="col-4" id="emptyBeds">
+            <h3 class="col-12" id="emptyBeds">
             </h3>
         </div>
         <div class="row">
@@ -42,7 +42,7 @@
             </div>
             <div class="col-4">
                 <div class="mt-3">
-                    <i class="d-block">Klik op de kaart om informatie over elke afdeling te krijgen!</i>
+                    <b><i class="d-block">Klik op de kaart om informatie over elke afdeling te krijgen!</i></b>
                 </div>
                 <div class="mt-2" id="specs"></div>
             </div>
@@ -106,23 +106,23 @@
                 // html data table
                 html = `<table class='table mt-3'>
                                 <tr>
-                                    <td><i>${messageFromVA.columns[0]["label"]}</i></td>
+                                    <td>${messageFromVA.columns[0]["label"]}</td>
                                     <td>${messageFromVA.data[i][0]}</td>
                                 </tr>
                                 <tr>
-                                    <td><i>${messageFromVA.columns[1]["label"]}</i></td>
+                                    <td>${messageFromVA.columns[1]["label"]}</td>
                                     <td>${messageFromVA.data[i][1]}</td>
                                 </tr>
                                 <tr>
-                                    <td><i>${messageFromVA.columns[2]["label"]}</i></td>
+                                    <td>${messageFromVA.columns[2]["label"]}</td>
                                     <td>${messageFromVA.data[i][2]}</td>
                                 </tr>
                                 <tr>
-                                    <td><i>${messageFromVA.columns[3]["label"]}</i></td>
+                                    <td>${messageFromVA.columns[3]["label"]}</td>
                                     <td>${messageFromVA.data[i][3]}</td>
                                 </tr>
                                 <tr>
-                                    <td><i>${messageFromVA.columns[4]["label"]}</i></td>
+                                    <td>${messageFromVA.columns[4]["label"]}</td>
                                     <td>${messageFromVA.data[i][4]}</td>
                                 </tr>
                             </table>`;
