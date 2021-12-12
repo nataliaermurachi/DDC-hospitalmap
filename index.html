@@ -44,7 +44,8 @@
                 <div class="mt-3">
                     <b><i class="d-block">Klik op de kaart om informatie over elke afdeling te krijgen!</i></b>
                 </div>
-                <div class="mt-2" id="specs"></div>
+                <div class="mt-2 ml-3" id="specs"></div>
+                <div class="mt-2 ml-3 text-center" id="image"></div>
             </div>
         </div>
     </div>
@@ -104,7 +105,7 @@
                 // Display the number of empty beds;
                 $("#emptyBeds").html(`${messageFromVA.columns[2]["label"]}: <i>${messageFromVA.data[i][2]}</i>`); 
                 // html data table
-                html = `<table class='table mt-3'>
+                html = `<table class='table mt-3 ml-3'>
                                 <tr>
                                     <td><b>${messageFromVA.columns[0]["label"]}</b></td>
                                     <td>${messageFromVA.data[i][0]}</td>
@@ -127,7 +128,9 @@
                                 </tr>
                             </table>`;
                 // Add the specifications in the defined div
-                $("#specs").html(html);    
+                $("#specs").html(html); 
+                // Add the photo 
+                $("#image").html(`<img src="./images/afdeel-${i}.jpg" alt="Department ${i}" class="img-thumbnail ml-3">`); 
             });
         }
         // execute the viewData() to get the data
